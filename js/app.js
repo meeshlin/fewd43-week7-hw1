@@ -19,24 +19,27 @@ $(document).ready(function() {
   $(document).on("click", ".choice", function() {
     var playerChoice = $(this).attr("id");
 
-    if (playerChoice == computerChoice) {
+    alert(playerChoice);
+
+    if (playerChoice === computerChoice) {
       alert ("It's a tie!");
-    } else if (playerChoice == "rock") {
-      if (computerChoice == "scissors") {
+    } else if (playerChoice === "rock") {
+      if (computerChoice === "scissors") {
         //Alert ("You win!");
         $(this).addClass("success green-background");
       } else {
         alert ("You lose :(");
       };
-    } else if (playerChoice == "paper") {
-      if (computerChoice == "rock") {
+    } else if (playerChoice === "paper") {
+      if (computerChoice === "rock") {
         //Alert ("You win!");
         $(this).addClass("success green-background");
       } else {
         alert ("You lose :(");
       };
-    } else if (playerChoice == "scissors") {
-      if (computerChoice == "paper") {
+    } else if (playerChoice === "scissors") {
+      if (computerChoice === "paper") {
+        //Alert ("You win!");
         $(this).addClass("success green-background");
       } else {
         alert ("You lose :(");
